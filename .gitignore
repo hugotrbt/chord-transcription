@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environments
+.env/
+.venv/
+venv/
+env/
+
+# Data and weights
+data/
+datasets/
+checkpoints/
+runs/
+*.pt
+*.pth
+*.h5
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
