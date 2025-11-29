@@ -11,8 +11,8 @@ def plot_waveform(y, sr):
     plt.title("Waveform")
     plt.xlabel("Time (s)")
     plt.tight_layout()
-    #plt.show()
-    plt.savefig("waveform.png")
+    plt.show()
+    #plt.savefig("waveform.png")
     
 
 def plot_chroma(chroma, sr, hop_length):
@@ -28,8 +28,8 @@ def plot_chroma(chroma, sr, hop_length):
     plt.title("Chroma CQT")
     plt.colorbar()
     plt.tight_layout()
-    #plt.show()
-    plt.savefig("chroma.png")
+    plt.show()
+    #plt.savefig("chroma.png")
     
 def main():
     print("Loading audio...")
