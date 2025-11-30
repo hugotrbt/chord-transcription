@@ -3,16 +3,17 @@ import librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
 
-AUDIO_PATH = "data/audio/let_it_be.wav"
+#AUDIO_PATH = "data/audio/let_it_be.wav"
+AUDIO_PATH = "data/audio/I_ll_Follow_the_Sun.wav"
 
 def plot_waveform(y, sr):
     plt.figure(figsize=(12, 3))
     librosa.display.waveshow(y, sr=sr)
-    plt.title("Waveform")
+    plt.title("Waveform (music)")
     plt.xlabel("Time (s)")
     plt.tight_layout()
     plt.show()
-    #plt.savefig("waveform.png")
+    #plt.savefig("waveform_2.png")
     
 
 def plot_chroma(chroma, sr, hop_length):
@@ -25,11 +26,11 @@ def plot_chroma(chroma, sr, hop_length):
         hop_length=hop_length,
         cmap="magma",
     )
-    plt.title("Chroma CQT")
+    plt.title("Chroma CQT (music)")
     plt.colorbar()
     plt.tight_layout()
     plt.show()
-    #plt.savefig("chroma.png")
+    #plt.savefig("chroma_2.png")
     
 def main():
     print("Loading audio...")
