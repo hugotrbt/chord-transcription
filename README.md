@@ -16,34 +16,6 @@ pip install -r requirements.txt
 
 Make sure you have ffmpeg installed if using librosa on audio files.
 
-## 📂 Project Structure
-
-chord-transcription/
-│
-├── report/
-│ └── intermediate/ # Intermediate report (PDF)
-│
-├── data/
-│ ├── audio/ # Audio files (e.g., Let It Be, I'll Follow the Sun)
-│ ├── annotations/ # .lab ground-truth labels from Isophonics
-│ └── features/
-│
-├── src/
-│ ├── classical/ # Classical baseline implementation
-│ │ ├── preprocessing.py
-│ │ ├── chord_templates.py
-│ │ ├── template_matching.py
-│ │ ├── smoothing.py
-│ │ └── evaluation.py
-│ │
-│ ├── utils/ # Helpers (I/O, plotting, etc.)
-│ └── deep/ # Deep learning model (upcoming)
-│
-└── scripts/
-├── run_preprocessing.py
-├── run_classical.py # Main script for classical pipeline
-└── run_deep.py # Will be added later
-
 ## 🎼 Running the Classical Baseline
 
 Run the full classical chord-recognition pipeline:
